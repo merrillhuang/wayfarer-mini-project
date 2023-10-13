@@ -1,0 +1,26 @@
+<div class="flex flex-col p-4 h-[20rem] items-center">
+  <div class="flex items-center w-full flex-1">
+    <button
+      class="flex justify-center items-center rounded-full h-8 w-8 p-6 mr-4 hover:bg-gray-300 hover:text-white transition duration-200 hover:shadow-2xl"
+      (click)="scrollLeft()"
+    >
+      <ng-icon name="cLeft" class="text-black text-3xl hover:text-white" />
+    </button>
+    <div class="overflow-hidden h-[80%] w-[90%] rounded">
+      <img class="object-cover w-full h-[14rem]" src="{{ url }}" alt="#" />
+    </div>
+    <button
+      class="flex justify-center items-center rounded-full h-8 w-8 p-6 ml-4 hover:bg-gray-300 hover:text-white transition duration-200 hover:shadow-2xl"
+      (click)="scrollRight()"
+    >
+      <ng-icon name="cRight" class="text-black text-3xl" />
+    </button>
+  </div>
+  <div class="flex space-x-6">
+    <div
+      *ngFor="let image of images; let i = index"
+      [class]="carouselDot"
+      [ngClass]="{ 'bg-gray-600': i === imgIndex }"
+    ></div>
+  </div>
+</div>
