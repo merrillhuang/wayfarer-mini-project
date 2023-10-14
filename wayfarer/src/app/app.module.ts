@@ -11,6 +11,8 @@ import {
   bootstrapChevronCompactLeft as cLeft,
   bootstrapChevronCompactRight as cRight,
 } from '@ng-icons/bootstrap-icons';
+import { HomepageComponent } from './homepage/homepage.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import {
     HeaderComponent,
     CarouselComponent,
     AppWrapperComponent,
+    HomepageComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
