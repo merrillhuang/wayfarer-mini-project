@@ -11,6 +11,7 @@ import {
   bootstrapChevronCompactLeft as cLeft,
   bootstrapChevronCompactRight as cRight,
 } from '@ng-icons/bootstrap-icons';
+import { CardTopicsComponent } from './card-topics/card-topics.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {
     HeaderComponent,
     CarouselComponent,
     AppWrapperComponent,
+    CardTopicsComponent,
   ],
   imports: [
     BrowserModule,
