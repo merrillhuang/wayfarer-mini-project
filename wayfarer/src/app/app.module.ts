@@ -15,6 +15,7 @@ import {
 import { HomepageComponent } from './homepage/homepage.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardTopicsComponent } from './card-topics/card-topics.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import { CardTopicsComponent } from './card-topics/card-topics.component';
     HomepageComponent,
     SidebarComponent,
     CardTopicsComponent,
+    AppWrapperComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
