@@ -1,3 +1,4 @@
-<div>
-    <app-sidebar></app-sidebar>
+<div class="flex overflow-hidden flex-1 min-h-screen w-full">
+  <app-sidebar [cities]="cities" class="w-full"></app-sidebar>
+  <router-outlet />
 </div>

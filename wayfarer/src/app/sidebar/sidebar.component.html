@@ -1,3 +1,14 @@
-<div>
-    <h1>Cities</h1>
+<div class="flex flex-col h-full shadow-lg border-r border-gray-200 w-[30%]">
+  <h1 class="text-3xl font-extralight text-center mt-10">Cities</h1>
+  <div class="flex flex-col mt-10 space-y-4 px-8">
+    <a
+      routerLink="{{ city.name }}"
+      class="border rounded p-4 flex justify-center shadow hover:bg-gray-100 transition"
+      *ngFor="let city of cities"
+    >
+      <span>
+        {{ city.name }}
+      </span>
+    </a>
+  </div>
 </div>

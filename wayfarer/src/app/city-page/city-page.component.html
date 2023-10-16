@@ -1,0 +1,8 @@
+<div *ngIf="city">
+  <h1>{{ city.name }}</h1>
+  <p>Country: {{ city.country }}</p>
+  <div *ngFor="let post of city.posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+</div>
