@@ -1,0 +1,9 @@
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed for spacing */
+    gap: 20px; /* Adjust as needed for spacing */
+
+  }
+  
+
+  
