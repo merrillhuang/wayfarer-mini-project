@@ -8,6 +8,13 @@
     />
   </div>
   <div *ngIf="isCitesPage()">
-    <input class="border rounded border-gray-300" />
+    <div class="relative">
+      <input
+        class="border rounded border-gray-300 p-2 pl-6"
+        (input)="handleInput()"
+        [(ngModel)]="search"
+      />
+      <ng-icon class="absolute font-bold top-3 left-2" name="search" />
+    </div>
   </div>
 </nav>

@@ -20,9 +20,7 @@ export class CityPageComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       const cityName = params.get('name');
       // Find the city data based on the cityName parameter
-      this.city = this.cityService
-        .getCities()
-        .find((c) => c.name === cityName)!;
+      this.city = this.cityService.cities.find((c) => c.name === cityName)!;
     });
   }
 }

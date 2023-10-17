@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SearchService } from '../search.service';
 
 @Component({
   selector: 'wf-header',
@@ -7,9 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  search: string = '';
+  constructor(private router: Router, private searchService: SearchService) {}
 
   isCitesPage(): boolean {
     return this.router.url.startsWith('/cities');
+  }
+
+  handleInput() {
+    this.searchService.searchCities(this.search);
   }
 }
