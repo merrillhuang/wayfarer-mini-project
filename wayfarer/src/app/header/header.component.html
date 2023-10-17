@@ -2,9 +2,12 @@
   <div class="">
     <img
       class="cursor-pointer"
-      routerLink="/cities/New%20York"
+      routerLink="/cities/New York"
       src="../assets/WayFayer.svg"
       alt="WayFarer Logo"
     />
+  </div>
+  <div *ngIf="isCitesPage()">
+    <input class="border rounded border-gray-300" />
   </div>
 </nav>

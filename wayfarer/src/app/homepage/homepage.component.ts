@@ -5,7 +5,8 @@ import { CityService } from '../city-service.service';
 export type Cities = {
   name: string;
   country: string;
-  posts: { title: string; body: string }[];
+  image: string;
+  posts: { title: string; body: string; image: string }[];
 };
 
 @Component({

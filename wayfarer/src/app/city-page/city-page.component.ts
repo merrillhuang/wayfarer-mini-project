@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Cities } from '../homepage/homepage.component';
 import { ActivatedRoute } from '@angular/router';
 import { CityService } from '../city-service.service';
@@ -9,7 +9,7 @@ import { CityService } from '../city-service.service';
   styleUrls: ['./city-page.component.css'],
 })
 export class CityPageComponent implements OnInit {
-  @Input() city!: Cities;
+  city!: Cities;
 
   constructor(
     private route: ActivatedRoute,
